@@ -98,3 +98,52 @@ The project follows these steps:
 ```text
 Accuracy: 0.8735
 Predicted outcome: Loan will likely be paid back
+```
+
+
+## How to Run
+
+### 1. Download the Dataset
+
+Download the dataset from Kaggle:  
+https://www.kaggle.com/datasets/nabihazahid/loan-prediction-dataset-2025
+
+Extract the file and locate:
+
+`loan_dataset_20000.csv`
+
+---
+
+### 2. Place the Dataset
+
+Move the file `loan_dataset_20000.csv` into the same folder as:
+
+`loan_prediction.py`
+
+---
+
+### 3. Install Required Libraries
+
+Open Command Prompt (or Terminal) and run:
+
+```bash
+pip install -r requirements.txt
+
+```
+
+### 4. Run the Project
+In the same folder, run:
+
+```bash
+python loan_prediction.py
+
+```
+
+### 5. View Results
+
+The program will display:
+
+- Model accuracy
+- Classification report
+- Confusion matrix
+- A prediction for a sample borrower
