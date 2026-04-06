@@ -1,54 +1,97 @@
 # AI-Based Loan Repayment Prediction System
 
-This project uses machine learning to predict whether a borrower is likely to repay a loan using financial and demographic information.
+This project applies machine learning to predict whether a borrower is likely to repay a loan using financial and demographic data. It demonstrates a complete beginner-to-intermediate level machine learning workflow, from data preprocessing to model evaluation and prediction.
+
+---
 
 ## Objective
-The goal of this project is to demonstrate a complete beginner-friendly machine learning workflow:
-- loading and exploring data
-- preprocessing and encoding variables
-- training a classification model
-- evaluating performance
-- making an individual borrower prediction
 
-## Tools Used
-- Python
-- Pandas
-- Scikit-learn
-- Logistic Regression
+The objective of this project is to build and understand a full machine learning pipeline by:
+
+- Loading and exploring structured data
+- Handling missing values
+- Encoding categorical variables
+- Training a classification model
+- Evaluating model performance
+- Making predictions for individual borrowers
+
+---
+
+## Tools & Technologies
+
+- Python  
+- Pandas (data manipulation)  
+- Scikit-learn (machine learning)  
+- Logistic Regression (classification model)  
+
+---
 
 ## Dataset
-The dataset was obtained from Kaggle and includes borrower-related features such as:
-- age
-- income
-- employment status
-- credit score
-- loan amount
-- debt-to-income ratio
-- delinquency history
 
-Target column:
-- `loan_paid_back`
-  - `1` = loan paid back
-  - `0` = loan not paid back
+The dataset used in this project was obtained from Kaggle:
 
-## Method
-1. Loaded the CSV dataset
-2. Handled missing values
-3. Encoded categorical variables into numeric form
-4. Split data into training and test sets
-5. Trained a Logistic Regression model
-6. Evaluated the model using:
-   - accuracy
-   - classification report
-   - confusion matrix
-7. Generated a sample prediction for one borrower
+https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data
 
-## Result
-- Achieved approximately **87.35% accuracy**
-- The model shows strong performance in identifying borrowers who repay loans
-- Lower recall for defaulters highlights a limitation in detecting high-risk borrowers
+### Features include:
+- Age  
+- Income  
+- Employment status  
+- Credit score  
+- Loan amount  
+- Debt-to-income ratio  
+- Delinquency history  
+
+### Target Variable:
+`loan_paid_back`
+
+- `1` → Loan repaid  
+- `0` → Loan not repaid  
+
+---
+
+## Methodology
+
+The project follows these steps:
+
+1. **Data Loading**
+   - Imported dataset using Pandas
+
+2. **Data Preprocessing**
+   - Handled missing values using median (numerical) and mode (categorical)
+   - Converted categorical variables into numeric form using Label Encoding
+
+3. **Feature Selection**
+   - Separated input features (`X`) and target variable (`y`)
+
+4. **Train-Test Split**
+   - Split dataset into training (80%) and testing (20%) sets
+
+5. **Model Training**
+   - Trained a Logistic Regression model for binary classification
+
+6. **Model Evaluation**
+   - Accuracy score  
+   - Classification report  
+   - Confusion matrix  
+
+7. **Prediction**
+   - Generated prediction for an individual borrower
+
+---
+
+## Results
+
+- Model Accuracy: **87.35%**
+
+### Key Insights:
+- The model performs well in predicting borrowers who are likely to repay loans
+- Lower recall for non-repayment cases indicates reduced sensitivity to high-risk borrowers
+- This reflects a common real-world challenge in credit risk modeling (class imbalance)
+
+---
 
 ## Sample Output
+
 ```text
 Accuracy: 0.8735
 Predicted outcome: Loan will likely be paid back
