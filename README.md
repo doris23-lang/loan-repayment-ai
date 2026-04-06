@@ -45,7 +45,8 @@ Target column:
 
 ## Result
 - Achieved approximately **87.35% accuracy**
-- The model performed better at predicting repayment than non-repayment, showing a realistic class imbalance challenge in credit risk prediction
+- The model shows strong performance in identifying borrowers who repay loans
+- Lower recall for defaulters highlights a limitation in detecting high-risk borrowers
 
 ## Sample Output
 ```text
