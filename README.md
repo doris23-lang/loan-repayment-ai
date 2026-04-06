@@ -1,6 +1,6 @@
 # AI-Based Loan Repayment Prediction System
 
-This project applies machine learning to predict whether a borrower is likely to repay a loan using financial and demographic data. It demonstrates a complete beginner-to-intermediate level machine learning workflow, from data preprocessing to model evaluation and prediction.
+This project applies machine learning to predict whether a borrower is likely to repay a loan using financial and demographic data. It demonstrates a complete beginner-to-intermediate machine learning workflow, from data preprocessing to model evaluation and prediction.
 
 ---
 
@@ -8,12 +8,12 @@ This project applies machine learning to predict whether a borrower is likely to
 
 The objective of this project is to build and understand a full machine learning pipeline by:
 
-- Loading and exploring structured data
-- Handling missing values
-- Encoding categorical variables
-- Training a classification model
-- Evaluating model performance
-- Making predictions for individual borrowers
+- Loading and exploring structured data  
+- Handling missing values  
+- Encoding categorical variables  
+- Training a classification model  
+- Evaluating model performance  
+- Making predictions for individual borrowers  
 
 ---
 
@@ -30,7 +30,10 @@ The objective of this project is to build and understand a full machine learning
 
 The dataset used in this project was obtained from Kaggle:
 
-https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data
+https://www.kaggle.com/datasets/nabihazahid/loan-prediction-dataset-2025
+
+### File Used:
+`loan_dataset_20000.csv`
 
 ### Features include:
 - Age  
@@ -54,20 +57,20 @@ https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data
 The project follows these steps:
 
 1. **Data Loading**
-   - Imported dataset using Pandas
+   - Imported dataset using Pandas  
 
 2. **Data Preprocessing**
-   - Handled missing values using median (numerical) and mode (categorical)
-   - Converted categorical variables into numeric form using Label Encoding
+   - Handled missing values using median (numerical) and mode (categorical)  
+   - Converted categorical variables into numeric form using Label Encoding  
 
 3. **Feature Selection**
-   - Separated input features (`X`) and target variable (`y`)
+   - Separated input features (`X`) and target variable (`y`)  
 
 4. **Train-Test Split**
-   - Split dataset into training (80%) and testing (20%) sets
+   - Split dataset into training (80%) and testing (20%) sets  
 
 5. **Model Training**
-   - Trained a Logistic Regression model for binary classification
+   - Trained a Logistic Regression model for binary classification  
 
 6. **Model Evaluation**
    - Accuracy score  
@@ -75,7 +78,7 @@ The project follows these steps:
    - Confusion matrix  
 
 7. **Prediction**
-   - Generated prediction for an individual borrower
+   - Generated prediction for an individual borrower  
 
 ---
 
@@ -84,9 +87,9 @@ The project follows these steps:
 - Model Accuracy: **87.35%**
 
 ### Key Insights:
-- The model performs well in predicting borrowers who are likely to repay loans
-- Lower recall for non-repayment cases indicates reduced sensitivity to high-risk borrowers
-- This reflects a common real-world challenge in credit risk modeling (class imbalance)
+- The model performs well in predicting borrowers who are likely to repay loans  
+- Lower recall for non-repayment cases indicates reduced sensitivity to high-risk borrowers  
+- This reflects a common real-world challenge in credit risk modeling (class imbalance)  
 
 ---
 
